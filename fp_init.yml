@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  labels:
+    podname: fp1
+  name: fp
+spec:
+  containers:
+  - name: ngnix
+    image: coolgourav147/nginx-custom
+    env: 
+    - name: name 
+      value: aj
+    - name: city 
+      value: bn 
+    args: ["sleep", "4455" ]
+
+  - name: ngnix1
+    image: coolgourav147/nginx-custom
+    env:
+    - name: name
+      value: aj
+    - name: city
+      value: bn
+      #    args: ["sleep", "7777" ]
+
+  initContainers:
+  - name: init
+    image: coolgourav147/nginx-custom
+    env:
+    - name: name
+      value: aj
+    - name: city
+      value: bn
+    args: ["sleep", "13" ]
+  - name: init1
+    image: coolgourav147/nginx-custom
+    env:
+    - name: name
+      value: aj
+    - name: city
+      value: bn
+    args: ["sleep", "30" ]

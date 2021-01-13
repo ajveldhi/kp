@@ -1,0 +1,23 @@
+
+apiVersion: v1
+
+kind: ReplicationController
+
+metadata:
+  name: myfirstrc
+  labels:
+    appname: myapp
+
+spec:
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        podname: fp1
+        type: app
+      name: fp
+    spec:
+      containers:
+      - name: ngnix
+        image: coolgourav147/nginx-custom:v2
+

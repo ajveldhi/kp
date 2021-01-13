@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  labels:
+    podname: fp1
+  name: sp
+spec:
+  containers:
+  - name: ngnix
+    image: coolgourav147/nginx-custom

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  labels:
+    podname: fp1
+  name: fp
+spec:
+  containers:
+  - name: ngnix
+    image: coolgourav147/nginx-custom:v2
+    env: 
+    - name: name 
+      value: aj
+    - name: city 
+      value: bn 
