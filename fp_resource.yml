@@ -9,8 +9,7 @@ spec:
   containers:
   - name: ngnix
     image: coolgourav147/nginx-custom:v2
-    env: 
-    - name: name 
-      value: aj
-    - name: city 
-      value: bn 
+    resources:
+      requests:
+        memory: 2Gi
+

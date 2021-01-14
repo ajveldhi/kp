@@ -1,0 +1,32 @@
+
+
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: fd
+  labels:
+    name: fd
+
+spec:
+  replicas: 10
+  minReadySeconds: 5
+  strategy:
+    rollingUpdate :
+      maxSurge: 2
+      maxUnavailable: 0
+    type: RollingUpdate
+
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+      name: fp
+    spec:
+      containers:
+      - name: ngnix
+        image: coolgourav147/nginx-custom:v2
+
