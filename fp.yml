@@ -4,11 +4,12 @@ kind: Pod
 metadata:
   labels:
     podname: fp1
-  name: fp
+    app: myapp
+  name: wbedefault
 spec:
   containers:
   - name: ngnix
-    image: coolgourav147/nginx-custom:v2
+    image: coolgourav147/nginx-custom
     env: 
     - name: name 
       value: aj
