@@ -1,0 +1,26 @@
+
+apiVersion: v1
+kind: Pod
+
+metadata:
+  labels:
+    app: myapp
+  name: pod
+
+spec:
+  containers:
+  - name: ngnix
+    image: coolgourav147/nginx-custom
+    volumeMounts:
+    - name: test
+      mountPath: "/config"
+      readOnly: true
+
+#    envFrom:
+#    - configMapRef:
+#        name: cm11    
+  volumes:
+  - name: test
+    configMap:
+      name: cm11	
+
