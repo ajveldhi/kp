@@ -1,6 +1,6 @@
 
 OLDPWD=/home/ubuntu/kp/properties
-AWS_SECRET_ACCESS_KEY=QfqMMobiM4Yh/UjCQyv8vZI6c/0E3ohRSISv9GGR
+AWS_SECRET_ACCESS_KEY=iiiiiiiiiiiiiiiiiiiii
 AWS_DEFAULT_REGION=us-east-1
 XDG_SESSION_ID=7
 USER=ubuntu
@@ -13,7 +13,7 @@ SSH_TTY=/dev/pts/0
 MAIL=/var/mail/ubuntu
 TERM=xterm
 SHELL=/bin/bash
-AWS_ACCESS_KEY_ID=AKIAQ2CHPKXX4PJHRWQN
+AWS_ACCESS_KEY_ID=bbbbbbbbbbbbbbbbbbbbbb
 KOPS_STATE_STORE=s3://ajajajnew.tk
 SHLVL=1
 LOGNAME=ubuntu
